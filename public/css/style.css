@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(225deg, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 64px 32px;
+  position: relative;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dt {
+  display: none;
+}
+
+.music-site {
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 10px;
+  max-width: 350px;
+}
+.music-site__wallpaper {
+  border-radius: 15px 15px 0 0;
+}
+.music-site__background {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.music-site__summary {
+  margin: 32px 0 24px 0;
+}
+.music-site__plan {
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 0 16px 0;
+  margin: 0 20px 0 20px;
+}
+
+.summary__header {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.summary__paragraph {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: auto;
+  width: 82%;
+}
+
+.plan__icon {
+  width: 42px;
+  margin-left: -4px;
+}
+.plan__about {
+  margin-left: -25px;
+}
+.plan__about .about__time {
+  font-size: 14px;
+  font-weight: 700;
+}
+.plan__about .about__price {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 14px;
+  font-weight: 400;
+}
+.plan--action:hover {
+  opacity: 0.6;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+.action__payment {
+  background-color: hsl(245deg, 75%, 52%);
+  border-radius: 10px;
+  color: hsl(225deg, 100%, 98%);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 0;
+}
+.action__cancel {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 12px 0;
+}
+.action--payment:hover {
+  opacity: 0.6;
+}
+.action--cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.attribution {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+  .music-site__background {
+    display: none;
+  }
+  .music-site .dt {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  body {
+    height: 100%;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

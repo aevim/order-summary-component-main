@@ -1,0 +1,146 @@
+@use 'base';
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: base.$pale-blue;
+	display: flex;
+	justify-content: center;
+	font-family: 'Red Hat Display', sans-serif;
+	padding: 64px 32px;
+	position: relative;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.dt {
+	display: none;
+}
+
+.music-site {
+	background-color: base.$very-pale-blue;
+	border-radius: 10px;
+	max-width: 350px;
+	&__wallpaper {
+		border-radius: 15px 15px 0 0;
+	}
+	&__background {
+		left: 0;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+	}
+	&__summary {
+		margin: 32px 0 24px 0;
+	}
+
+	&__plan {
+		align-items: center;
+		background-color: base.$very-pale-blue;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-around;
+		padding: 16px 0 16px 0;
+		margin: 0 20px 0 20px;
+	}
+}
+
+.summary {
+	&__header {
+		font-size: 22px;
+		font-weight: 900;
+		margin-bottom: 20px;
+	}
+
+	&__paragraph {
+		color: base.$desaturated-blue;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 1.5;
+		margin: auto;
+		width: 82%;
+	}
+}
+
+.plan {
+	&__icon {
+		width: 42px;
+		margin-left: -4px;
+	}
+	&__about {
+		margin-left: -25px;
+		.about {
+			&__time {
+				font-size: 14px;
+				font-weight: 700;
+			}
+			&__price {
+				color: base.$desaturated-blue;
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+	}
+	&--action:hover {
+		opacity: .6;
+	}
+}
+
+.action {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 20px;
+	&__payment {
+		background-color: base.$bright-blue;
+		border-radius: 10px;
+		color: base.$very-pale-blue;
+		font-size: 15px;
+		font-weight: 700;
+		padding: 12px 0;
+	}
+	&__cancel {
+		color: base.$desaturated-blue;
+		font-size: 15px;
+		margin-top: 10px;
+		padding: 12px 0;	
+	}
+	&--payment:hover {
+		opacity: .6;
+	}
+	&--cancel:hover {
+		color: base.$dark-blue;
+	}
+}
+
+.attribution {
+	font-size: 12px;
+	opacity: .6;
+	margin-bottom: 12px;
+}
+
+@media only screen and (min-width:600px) {
+	.music-site {
+		&__background {
+			display: none;
+		}
+		.dt {
+			display: block;
+		}
+	}
+}
+
+@media only screen and (min-width:1360px) {
+	body {
+		height: 100%;
+		align-items: center;
+	}
+}
