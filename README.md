@@ -43,6 +43,9 @@ Users should be able to:
 ### What I learned
 I getting more experience with BEM methodology, and I think this project went a bit 
 better than my previous with the structure of the html.
+I did not thought about the desktop image before finishing the mobile layout 
+and that cause me some trouble. Next time I'll be more carefull. My solution was to 
+create another img tag and toggle its visibility.
 
 ## Author
 
