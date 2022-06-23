@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/sass-bem-flexbox-Ftl1qhfY5B)
 - Live Site URL: [Site](https://aevim.github.io/order-summary-component-main/)
 
 ## My process
