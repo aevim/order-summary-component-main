@@ -99,7 +99,7 @@ a {
 }
 .music-site__plan {
   align-items: center;
-  background-color: hsl(225deg, 100%, 98%);
+  background-color: rgba(54, 59, 64, 0.03);
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
