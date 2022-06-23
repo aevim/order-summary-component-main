@@ -60,6 +60,7 @@ body {
   background-color: hsl(225deg, 100%, 94%);
   display: flex;
   justify-content: center;
+  flex-direction: column;
   font-family: "Red Hat Display", sans-serif;
   padding: 64px 32px;
   position: relative;
@@ -80,7 +81,8 @@ a {
 
 .music-site {
   background-color: hsl(225deg, 100%, 98%);
-  border-radius: 10px;
+  border-radius: 20px;
+  margin: auto;
   max-width: 350px;
 }
 .music-site__wallpaper {
@@ -129,6 +131,7 @@ a {
 .plan__about .about__time {
   font-size: 14px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 .plan__about .about__price {
   color: hsl(224deg, 23%, 55%);
@@ -142,7 +145,7 @@ a {
 .action {
   display: flex;
   flex-direction: column;
-  margin: 20px 20px;
+  margin: 20px 24px;
 }
 .action__payment {
   background-color: hsl(245deg, 75%, 52%);
@@ -154,21 +157,30 @@ a {
 }
 .action__cancel {
   color: hsl(224deg, 23%, 55%);
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 10px;
   padding: 12px 0;
 }
 .action--payment:hover {
+  box-shadow: 0px 20px 26px -4px rgba(37, 80, 115, 0.41);
+  -webkit-box-shadow: 0px 20px 26px -4px rgba(37, 80, 115, 0.41);
+  -moz-box-shadow: 0px 20px 26px -4px rgba(37, 80, 115, 0.41);
   opacity: 0.6;
 }
 .action--cancel:hover {
   color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
 }
 
 .attribution {
-  font-size: 12px;
-  opacity: 0.6;
-  margin-bottom: 12px;
+  font-size: 16px;
+  margin-top: 22px;
+  opacity: 0.4;
+}
+
+.attribution a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 600px) {
@@ -181,8 +193,13 @@ a {
 }
 @media only screen and (min-width: 1360px) {
   body {
-    height: 100%;
     align-items: center;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .plan__about {
+    margin-left: -28px;
   }
 }
 
